@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PokeDex.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace PokeDex
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainView());
         }
 
         protected override void OnStart()
